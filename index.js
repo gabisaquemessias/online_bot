@@ -1,7 +1,7 @@
 const venom = require('venom-bot');
 
 venom
-    .create({ session: 'ON', multidevice: true })
+    .create({ session: 'ON', multidevice: true, headless: 'true' })
     .then((client) => start(client))
     .catch((erro) => {
         console.log(erro);
